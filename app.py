@@ -4,10 +4,10 @@ from scraper import scrape_url, parse_content, save_to_json
 
 # ---------- PAGE CONFIG ----------
 st.set_page_config(
-    page_title="API Whisperer 🛡️",
+    page_title="API Guardian 🛡️",
     layout="wide"
 )
-st.title("API Whisperer 🛡️")
+st.title("API Guardian 🛡️")
 st.markdown("Ask questions about any API documentation you have scraped.")
 
 # ---------- SESSION STATE ----------
