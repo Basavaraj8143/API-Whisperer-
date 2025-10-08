@@ -1,0 +1,10 @@
+[
+    {
+        "id": "doc1",
+        "content": "Requests is a popular HTTP library for Python. It allows you to send HTTP requests using Python. The library abstracts the complexities of making requests behind a beautiful, simple API so that you can focus on interacting with services and consuming data in your application."
+    },
+    {
+        "id": "doc2",
+        "content": "Python Requests library is the de facto standard for making HTTP requests in Python. It abstracts the complexities of making requests behind a beautiful, simple API so that you can focus on interacting with services and consuming data in your application."
+    }
+]

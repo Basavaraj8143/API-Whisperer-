@@ -1,0 +1,320 @@
+[
+    {
+        "id": "1_0",
+        "text": "jQuery API Documentation\njQuery API\njQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. If you're new to jQuery, we recommend that you check out the jQuery Learning Center .\nIf you're updating to a newer version of jQuery, be sure to read the release notes published on our blog . If you're coming from a version prior 1.9, you should check out the 1.9 Upgrade Guide as well.\nNote that this is the API documentation for jQuery core. Other projects have API docs in other locations:\n.add()\nCreate a new jQuery object with elements added to the set of matched elements.\n.addBack()\nAdd the previous set of elements",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_1",
+        "text": "ject with elements added to the set of matched elements.\n.addBack()\nAdd the previous set of elements on the stack to the current set, optionally filtered by a selector.\n.addClass()\nAdds the specified class(es) to each element in the set of matched elements.\n.after()\nInsert content, specified by the parameter, after each element in the set of matched elements.\najaxComplete event\nRegister a handler to be called when Ajax requests complete. This is an AjaxEvent.\n.ajaxComplete()\nRegister a handler to be called when Ajax requests complete. This is an AjaxEvent.\najaxError event\nRegister a handler to be called when Ajax requests complete with an error. This is an Ajax Event.\n.ajaxError()\nRegister a handler to be called when Ajax requests complete with an error. This is an Ajax Event.\najaxSend eve",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_2",
+        "text": " handler to be called when Ajax requests complete with an error. This is an Ajax Event.\najaxSend event\nAttach a function to be executed before an Ajax request is sent. This is an Ajax Event.\n.ajaxSend()\nAttach a function to be executed before an Ajax request is sent. This is an Ajax Event.\najaxStart event\nRegister a handler to be called when the first Ajax request begins. This is an Ajax Event.\n.ajaxStart()\nRegister a handler to be called when the first Ajax request begins. This is an Ajax Event.\najaxStop event\nRegister a handler to be called when all Ajax requests have completed. This is an Ajax Event.\n.ajaxStop()\nRegister a handler to be called when all Ajax requests have completed. This is an Ajax Event.\najaxSuccess event\nAttach a function to be executed whenever an Ajax request complet",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_3",
+        "text": "s an Ajax Event.\najaxSuccess event\nAttach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event.\n.ajaxSuccess()\nAttach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event.\nAll Selector (“*”)\nSelects all elements.\n.andSelf()\nAdd the previous set of elements on the stack to the current set.\n.animate()\nPerform a custom animation of a set of CSS properties.\n:animated Selector\nSelect all elements that are in the progress of an animation at the time the selector is run.\n.append()\nInsert content, specified by the parameter, to the end of each element in the set of matched elements.\n.appendTo()\nInsert every element in the set of matched elements to the end of the target.\n.attr()\nGet the value of an attribute fo",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_4",
+        "text": "nt in the set of matched elements to the end of the target.\n.attr()\nGet the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.\nAttribute Contains Prefix Selector [name|=”value”]\nSelects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).\nAttribute Contains Selector [name*=”value”]\nSelects elements that have the specified attribute with a value containing a given substring.\nAttribute Contains Word Selector [name~=”value”]\nSelects elements that have the specified attribute with a value containing a given word, delimited by spaces.\nAttribute Ends With Selector [name$=”value”]\nSelects elements that have the specified attribut",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_5",
+        "text": "aces.\nAttribute Ends With Selector [name$=”value”]\nSelects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.\nAttribute Equals Selector [name=”value”]\nSelects elements that have the specified attribute with a value exactly equal to a certain value.\nAttribute Not Equal Selector [name!=”value”]\nSelect elements that either don’t have the specified attribute, or do have the specified attribute but not with a certain value.\nAttribute Starts With Selector [name^=”value”]\nSelects elements that have the specified attribute with a value beginning exactly with a given string.\n.before()\nInsert content, specified by the parameter, before each element in the set of matched elements.\n.bind()\nAttach a handler to an event for the e",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_6",
+        "text": ", before each element in the set of matched elements.\n.bind()\nAttach a handler to an event for the elements.\nblur event\nBind an event handler to the “blur” event, or trigger that event on an element.\n.blur()\nBind an event handler to the “blur” event, or trigger that event on an element.\n:button Selector\nSelects all button elements and elements of type button.\ncallbacks.add()\nAdd a callback or a collection of callbacks to a callback list.\ncallbacks.disable()\nDisable a callback list from doing anything more.\ncallbacks.disabled()\nDetermine if the callbacks list has been disabled.\ncallbacks.empty()\nRemove all of the callbacks from a list.\ncallbacks.fire()\nCall all of the callbacks with the given arguments.\ncallbacks.fired()\nDetermine if the callbacks have already been called at least once.\ncal",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_7",
+        "text": " arguments.\ncallbacks.fired()\nDetermine if the callbacks have already been called at least once.\ncallbacks.fireWith()\nCall all callbacks in a list with the given context and arguments.\ncallbacks.has()\nDetermine whether or not the list has any callbacks attached. If a callback is provided as an argument, determine whether it is in a list.\ncallbacks.lock()\nLock a callback list in its current state.\ncallbacks.locked()\nDetermine if the callbacks list has been locked.\ncallbacks.remove()\nRemove a callback or a collection of callbacks from a callback list.\nchange event\nBind an event handler to the “change” event, or trigger that event on an element.\n.change()\nBind an event handler to the “change” event, or trigger that event on an element.\n:checkbox Selector\nSelects all elements of type checkbox.",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_8",
+        "text": "vent, or trigger that event on an element.\n:checkbox Selector\nSelects all elements of type checkbox.\n:checked Selector\nMatches all elements that are checked or selected.\nChild Selector (“parent > child”)\nSelects all direct child elements specified by “child” of elements specified by “parent”.\n.children()\nGet the children of each element in the set of matched elements, optionally filtered by a selector.\nClass Selector (“.class”)\nSelects all elements with the given class.\n.clearQueue()\nRemove from the queue all items that have not yet been run.\nclick event\nBind an event handler to the “click” event, or trigger that event on an element.\n.click()\nBind an event handler to the “click” event, or trigger that event on an element.\n.clone()\nCreate a deep copy of the set of matched elements.\n.closest",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_9",
+        "text": "igger that event on an element.\n.clone()\nCreate a deep copy of the set of matched elements.\n.closest()\nFor each element in the set, get the first element that matches the selector by testing the element itself and traversing up through its ancestors in the DOM tree.\n:contains() Selector\nSelect all elements that contain the specified text.\n.contents()\nGet the children of each element in the set of matched elements, including text and comment nodes.\n.context\nThe DOM node context originally passed to jQuery(); if none was passed then context will likely be the document.\ncontextmenu event\nBind an event handler to the “contextmenu” event, or trigger that event on an element.\n.contextmenu()\nBind an event handler to the “contextmenu” event, or trigger that event on an element.\n.css()\nGet the valu",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_10",
+        "text": "n event handler to the “contextmenu” event, or trigger that event on an element.\n.css()\nGet the value of a computed style property for the first element in the set of matched elements or set one or more CSS properties for every matched element.\n.data()\nStore arbitrary data associated with the matched elements or return the value at the named data store for the first element in the set of matched elements.\ndblclick event\nBind an event handler to the “dblclick” event, or trigger that event on an element.\n.dblclick()\nBind an event handler to the “dblclick” event, or trigger that event on an element.\ndeferred.always()\nAdd handlers to be called when the Deferred object is either resolved or rejected.\ndeferred.catch()\nAdd handlers to be called when the Deferred object is rejected.\ndeferred.done(",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_11",
+        "text": "ted.\ndeferred.catch()\nAdd handlers to be called when the Deferred object is rejected.\ndeferred.done()\nAdd handlers to be called when the Deferred object is resolved.\ndeferred.fail()\nAdd handlers to be called when the Deferred object is rejected.\ndeferred.isRejected()\nDetermine whether a Deferred object has been rejected.\ndeferred.isResolved()\nDetermine whether a Deferred object has been resolved.\ndeferred.notify()\nCall the progressCallbacks on a Deferred object with the given args.\ndeferred.notifyWith()\nCall the progressCallbacks on a Deferred object with the given context and args.\ndeferred.pipe()\nUtility method to filter and/or chain Deferreds.\ndeferred.progress()\nAdd handlers to be called when the Deferred object generates progress notifications.\ndeferred.promise()\nReturn a Deferred’s P",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_12",
+        "text": " when the Deferred object generates progress notifications.\ndeferred.promise()\nReturn a Deferred’s Promise object.\ndeferred.reject()\nReject a Deferred object and call any failCallbacks with the given args.\ndeferred.rejectWith()\nReject a Deferred object and call any failCallbacks with the given context and args.\ndeferred.resolve()\nResolve a Deferred object and call any doneCallbacks with the given args.\ndeferred.resolveWith()\nResolve a Deferred object and call any doneCallbacks with the given context and args.\ndeferred.state()\nDetermine the current state of a Deferred object.\ndeferred.then()\nAdd handlers to be called when the Deferred object is resolved, rejected, or still in progress.\n.delay()\nSet a timer to delay execution of subsequent items in the queue.\n.delegate()\nAttach a handler to ",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_13",
+        "text": "()\nSet a timer to delay execution of subsequent items in the queue.\n.delegate()\nAttach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.\n.dequeue()\nExecute the next function on the queue for the matched elements.\nDescendant Selector (“ancestor descendant”)\nSelects all elements that are descendants of a given ancestor.\n.detach()\nRemove the set of matched elements from the DOM.\n.die()\nRemove event handlers previously attached using .live() from the elements.\n:disabled Selector\nSelects all elements that are disabled.\n.each()\nIterate over a jQuery object, executing a function for each matched element.\nElement Selector (“element”)\nSelects all elements with the given tag name.\n.empty()\nRemove all child nodes ",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_14",
+        "text": " Selector (“element”)\nSelects all elements with the given tag name.\n.empty()\nRemove all child nodes of the set of matched elements from the DOM.\n:empty Selector\nSelect all elements that have no children (including text nodes).\n:enabled Selector\nSelects all elements that are enabled.\n.end()\nEnd the most recent filtering operation in the current chain and return the set of matched elements to its previous state.\n.eq()\nReduce the set of matched elements to the one at the specified index.\n:eq() Selector\nSelect the element at index n within the matched set.\nerror event\nBind an event handler to the “error” event, or trigger that event on an element.\n.error()\nBind an event handler to the “error” event, or trigger that event on an element.\n.even()\nReduce the set of matched elements to the even one",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_15",
+        "text": "ent, or trigger that event on an element.\n.even()\nReduce the set of matched elements to the even ones in the set, numbered from zero.\n:even Selector\nSelects even elements, zero-indexed.  See also :odd.\nevent.currentTarget\nThe current DOM element within the event bubbling phase.\nevent.data\nAn optional object of data passed to an event method when the current executing handler is bound.\nevent.delegateTarget\nThe element where the currently-called jQuery event handler was attached.\nevent.isDefaultPrevented()\nReturns whether event.preventDefault() was ever called on this event object.\nevent.isImmediatePropagationStopped()\nReturns whether event.stopImmediatePropagation() was ever called on this event object.\nevent.isPropagationStopped()\nReturns whether event.stopPropagation() was ever called on ",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_16",
+        "text": "ent object.\nevent.isPropagationStopped()\nReturns whether event.stopPropagation() was ever called on this event object.\nevent.metaKey\nIndicates whether the META key was pressed when the event fired.\nevent.namespace\nThe namespace specified when the event was triggered.\nevent.pageX\nThe mouse position relative to the left edge of the document.\nevent.pageY\nThe mouse position relative to the top edge of the document.\nevent.preventDefault()\nIf this method is called, the default action of the event will not be triggered.\nevent.relatedTarget\nThe other DOM element involved in the event, if any.\nevent.result\nThe last value returned by an event handler that was triggered by this event, unless the value was undefined.\nevent.stopImmediatePropagation()\nKeeps the rest of the handlers from being executed a",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_17",
+        "text": "was undefined.\nevent.stopImmediatePropagation()\nKeeps the rest of the handlers from being executed and prevents the event from bubbling up the DOM tree.\nevent.stopPropagation()\nPrevents the event from bubbling up the DOM tree, preventing any parent handlers from being notified of the event.\nevent.target\nThe DOM element that initiated the event.\nevent.timeStamp\nThe difference in milliseconds between the time the browser created the event and January 1, 1970.\nevent.type\nDescribes the nature of the event.\nevent.which\nFor key or mouse events, this property indicates the specific key or button that was pressed.\n.fadeIn()\nDisplay the matched elements by fading them to opaque.\n.fadeOut()\nHide the matched elements by fading them to transparent.\n.fadeTo()\nAdjust the opacity of the matched elements.",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_18",
+        "text": "atched elements by fading them to transparent.\n.fadeTo()\nAdjust the opacity of the matched elements.\n.fadeToggle()\nDisplay or hide the matched elements by animating their opacity.\n:file Selector\nSelects all elements of type file.\n.filter()\nReduce the set of matched elements to those that match the selector or pass the function’s test.\n.find()\nGet the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.\n.finish()\nStop the currently-running animation, remove all queued animations, and complete all animations for the matched elements.\n.first()\nReduce the set of matched elements to the first in the set.\n:first-child Selector\nSelects all elements that are the first child of their parent.\n:first-of-type Selector\nSelects all elemen",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_19",
+        "text": "ts all elements that are the first child of their parent.\n:first-of-type Selector\nSelects all elements that are the first among siblings of the same element name.\n:first Selector\nSelects the first matched DOM element.\nfocus event\nBind an event handler to the “focus” event, or trigger that event on an element.\n:focus Selector\nSelects element if it is currently focused.\n.focus()\nBind an event handler to the “focus” event, or trigger that event on an element.\nfocusin event\nBind an event handler to the “focusin” event, or trigger that event on an element.\n.focusin()\nBind an event handler to the “focusin” event, or trigger that event on an element.\nfocusout event\nBind an event handler to the “focusout” event, or trigger that event on an element.\n.focusout()\nBind an event handler to the “focusou",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_20",
+        "text": "usout” event, or trigger that event on an element.\n.focusout()\nBind an event handler to the “focusout” event, or trigger that event on an element.\n.get()\nRetrieve the DOM elements matched by the jQuery object.\n:gt() Selector\nSelect all elements at an index greater than index within the matched set.\n.has()\nReduce the set of matched elements to those that have a descendant that matches the selector or DOM element.\nHas Attribute Selector [name]\nSelects elements that have the specified attribute, with any value.\n:has() Selector\nSelects elements which contain at least one element that matches the specified selector.\n.hasClass()\nDetermine whether any of the matched elements are assigned the given class.\n:header Selector\nSelects all elements that are headers, like h1, h2, h3 and so on.\n.height()\n",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_21",
+        "text": "class.\n:header Selector\nSelects all elements that are headers, like h1, h2, h3 and so on.\n.height()\nGet the current computed height for the first element in the set of matched elements or set the height of every matched element.\n:hidden Selector\nSelects all elements that are hidden.\n.hide()\nHide the matched elements.\n.hover()\nBind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.\n.html()\nGet the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.\nID Selector (“#id”)\nSelects a single element with the given id attribute.\n:image Selector\nSelects all elements of type image.\n.index()\nSearch for a given element from among the matched elements.\n.innerHeight()\nGet the c",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_22",
+        "text": "image.\n.index()\nSearch for a given element from among the matched elements.\n.innerHeight()\nGet the current computed inner height (including padding but not border) for the first element in the set of matched elements or set the inner height of every matched element.\n.innerWidth()\nGet the current computed inner width (including padding but not border) for the first element in the set of matched elements or set the inner width of every matched element.\n:input Selector\nSelects all input, textarea, select and button elements.\n.insertAfter()\nInsert every element in the set of matched elements after the target.\n.insertBefore()\nInsert every element in the set of matched elements before the target.\n.is()\nCheck the current matched set of elements against a selector, element, or jQuery object and re",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_23",
+        "text": ".is()\nCheck the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.\njQuery()\nReturn a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.\n.jquery\nA string containing the jQuery version number.\njQuery.ajax()\nPerform an asynchronous HTTP (Ajax) request.\njQuery.ajaxPrefilter()\nHandle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax().\njQuery.ajaxSetup()\nSet default values for future Ajax requests. Its use is not recommended.\njQuery.ajaxTransport()\nCreates an object that handles the actual transmission of Ajax data.\njQuery.boxModel\nStates if the current page",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_24",
+        "text": "object that handles the actual transmission of Ajax data.\njQuery.boxModel\nStates if the current page, in the user’s browser, is being rendered using the W3C CSS Box Model.\njQuery.browser\nContains flags for the useragent, read from navigator.userAgent. This property was removed in jQuery 1.9 and is available only through the jQuery.migrate plugin. Please try to use feature detection instead.\njQuery.Callbacks()\nA multi-purpose callbacks list object that provides a powerful way to manage callback lists.\njQuery.contains()\nCheck to see if a DOM element is a descendant of another DOM element.\njQuery.cssHooks\nHook directly into jQuery to override how particular CSS properties are retrieved or set, normalize CSS property naming, or create custom properties.\njQuery.cssNumber\nAn object containing al",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_25",
+        "text": "normalize CSS property naming, or create custom properties.\njQuery.cssNumber\nAn object containing all CSS properties that may be used without a unit. Prior to jQuery 4.0, the .css() method uses this object to see if it may append px to unitless values.\njQuery.data()\nStore arbitrary data associated with the specified element and/or return the value that was set.\njQuery.Deferred()\nA factory function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.\njQuery.Deferred.exceptionHook()\nHandle errors produced by Deferreds.\njQuery.Deferred.getErrorHook()\nReturn an Error instance with a defined stack.\njQuery.Deferred.getStackHook()\nReturn ",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_26",
+        "text": "getErrorHook()\nReturn an Error instance with a defined stack.\njQuery.Deferred.getStackHook()\nReturn an Error instance with a defined stack.\njQuery.dequeue()\nExecute the next function on the queue for the matched element.\njQuery.each()\nA generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function’s arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.\njQuery.error()\nTakes a string and throws an exception containing it.\njQuery.escapeSelector()\nEscapes any character that has a special meaning in a CSS selector.\njQuery.extend()\nMerge the contents of two or more objects together into the first object.\njQuery.find()\nTh",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_27",
+        "text": ".extend()\nMerge the contents of two or more objects together into the first object.\njQuery.find()\nThe jQuery selector engine, formerly known as Sizzle, is exposed under jQuery.find. This page describes all the APIs under jQuery.find.\njQuery.fn.extend()\nMerge the contents of an object onto the jQuery prototype to provide new jQuery instance methods.\njQuery.fx.interval\nThe rate (in milliseconds) at which animations fire.\njQuery.fx.off\nGlobally disable all animations.\njQuery.get()\nLoad data from the server using a HTTP GET request.\njQuery.getJSON()\nLoad JSON-encoded data from the server using a GET HTTP request.\njQuery.getScript()\nLoad a JavaScript file from the server using a GET HTTP request, then execute it.\njQuery.globalEval()\nExecute some JavaScript code globally.\njQuery.grep()\nFinds the",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_28",
+        "text": " then execute it.\njQuery.globalEval()\nExecute some JavaScript code globally.\njQuery.grep()\nFinds the elements of an array which satisfy a filter function. The original array is not affected.\njQuery.hasData()\nDetermine whether an element has any jQuery data associated with it.\njQuery.holdReady()\nHolds or releases the execution of jQuery’s ready event.\njQuery.htmlPrefilter()\nModify and filter HTML strings passed through jQuery manipulation methods.\njQuery.inArray()\nSearch for a specified value within an array and return its index (or -1 if not found).\njQuery.isArray()\nDetermine whether the argument is an array.\njQuery.isEmptyObject()\nCheck to see if an object is empty (contains no enumerable properties).\njQuery.isFunction()\nDetermines if its argument is callable as a function.\njQuery.isNumer",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_29",
+        "text": "roperties).\njQuery.isFunction()\nDetermines if its argument is callable as a function.\njQuery.isNumeric()\nDetermines whether its argument represents a JavaScript number.\njQuery.isPlainObject()\nCheck to see if an object is a plain object (created using “{}” or “new Object”).\njQuery.isWindow()\nDetermine whether the argument is a window.\njQuery.isXMLDoc()\nCheck to see if a DOM node is within an XML document (or is an XML document).\njQuery.makeArray()\nConvert an array-like object into a true JavaScript array.\njQuery.map()\nTranslate all items in an array or object to new array of items.\njQuery.merge()\nMerge the contents of two arrays together into the first array.\njQuery.noConflict()\nRelinquish jQuery’s control of the $ variable.\njQuery.noop()\nAn empty function.\njQuery.now()\nReturn a number repr",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_30",
+        "text": "uery’s control of the $ variable.\njQuery.noop()\nAn empty function.\njQuery.now()\nReturn a number representing the current time.\njQuery.param()\nCreate a serialized representation of an array, a plain object, or a jQuery object suitable for use in a URL query string or Ajax request. In case a jQuery object is passed, it should contain input elements with name/value properties.\njQuery.parseHTML()\nParses a string into an array of DOM nodes.\njQuery.parseJSON()\nTakes a well-formed JSON string and returns the resulting JavaScript value.\njQuery.parseXML()\nParses a string into an XML document.\njQuery.post()\nSend data to the server using a HTTP POST request.\njQuery.proxy()\nTakes a function and returns a new one that will always have a particular context.\njQuery.queue()\nShow or manipulate the queue of",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_31",
+        "text": "a new one that will always have a particular context.\njQuery.queue()\nShow or manipulate the queue of functions to be executed on the matched element.\njQuery.ready\nA Promise-like object (or “thenable”) that resolves when the document is ready.\njQuery.readyException()\nHandles errors thrown synchronously in functions wrapped in jQuery().\njQuery.removeData()\nRemove a previously-stored piece of data.\njQuery.speed\nCreates an object containing a set of properties ready to be used in the definition of custom animations.\njQuery.sub()\nCreates a new copy of jQuery whose properties and methods can be modified without affecting the original jQuery object.\njQuery.support\nA collection of properties that represent the presence of different browser features or bugs; intended for jQuery’s internal use.\njQue",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_32",
+        "text": "present the presence of different browser features or bugs; intended for jQuery’s internal use.\njQuery.trim()\nRemove the whitespace from the beginning and end of a string.\njQuery.type()\nDetermine the internal JavaScript [[Class]] of an object.\njQuery.unique()\nSorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.\njQuery.uniqueSort()\nSorts an array or an array-like object of DOM elements, in place, with the duplicates removed. Note that this only works on arrays/array-likes of DOM elements, not strings or numbers.\njQuery.when()\nProvides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.\nkeydown event\nBind an event ",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_33",
+        "text": "e objects, usually Deferred objects that represent asynchronous events.\nkeydown event\nBind an event handler to the “keydown” event, or trigger that event on an element.\n.keydown()\nBind an event handler to the “keydown” event, or trigger that event on an element.\nkeypress event\nBind an event handler to the “keypress” event, or trigger that event on an element.\n.keypress()\nBind an event handler to the “keypress” event, or trigger that event on an element.\nkeyup event\nBind an event handler to the “keyup” event, or trigger that event on an element.\n.keyup()\nBind an event handler to the “keyup” event, or trigger that event on an element.\n:lang() Selector\nSelects all elements of the specified language.\n.last()\nReduce the set of matched elements to the final one in the set.\n:last-child Selector\nS",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_34",
+        "text": "uage.\n.last()\nReduce the set of matched elements to the final one in the set.\n:last-child Selector\nSelects all elements that are the last child of their parent.\n:last-of-type Selector\nSelects all elements that are the last among siblings of the same element name.\n:last Selector\nSelects the last matched element.\n.length\nThe number of elements in the jQuery object.\n.live()\nAttach an event handler for all elements which match the current selector, now and in the future.\n.load()\nLoad data from the server and place the returned HTML into the matched elements.\nload event\nBind an event handler to the “load” event, or trigger that event on an element.\n.load()\nBind an event handler to the “load” event, or trigger that event on an element.\n:lt() Selector\nSelect all elements at an index less than ind",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_35",
+        "text": "t, or trigger that event on an element.\n:lt() Selector\nSelect all elements at an index less than index within the matched set.\n.map()\nPass each element in the current matched set through a function, producing a new jQuery object containing the return values.\nmousedown event\nBind an event handler to the “mousedown” event, or trigger that event on an element.\n.mousedown()\nBind an event handler to the “mousedown” event, or trigger that event on an element.\nmouseenter event\nBind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.\n.mouseenter()\nBind an event handler to the “mouseenter” event, or trigger that event on an element.\nmouseleave event\nBind an event handler to be fired when the mouse leaves an element, or trigger that handler on an ele",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_36",
+        "text": "ind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.\n.mouseleave()\nBind an event handler to the “mouseleave” event, or trigger that event on an element.\nmousemove event\nBind an event handler to the “mousemove” event, or trigger that event on an element.\n.mousemove()\nBind an event handler to the “mousemove” event, or trigger that event on an element.\nmouseout event\nBind an event handler to the “mouseout” event, or trigger that event on an element.\n.mouseout()\nBind an event handler to the “mouseout” event, or trigger that event on an element.\nmouseover event\nBind an event handler to the “mouseover” event, or trigger that event on an element.\n.mouseover()\nBind an event handler to the “mouseover” event, or trigger that event on an element.\nm",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_37",
+        "text": "\n.mouseover()\nBind an event handler to the “mouseover” event, or trigger that event on an element.\nmouseup event\nBind an event handler to the “mouseup” event, or trigger that event on an element.\n.mouseup()\nBind an event handler to the “mouseup” event, or trigger that event on an element.\nMultiple Attribute Selector [name=”value”][name2=”value2″]\nMatches elements that match all of the specified attribute filters.\nMultiple Selector (“selector1, selector2, selectorN”)\nSelects the combined results of all the specified selectors.\n.next()\nGet the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.\nNext Adjacent Selector (“prev + next”)\nSelects all next elements matching “next” th",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_38",
+        "text": "s that selector.\nNext Adjacent Selector (“prev + next”)\nSelects all next elements matching “next” that are immediately preceded by a sibling “prev”.\nNext Siblings Selector (“prev ~ siblings”)\nSelects all sibling elements that follow after the “prev” element, have the same parent, and match the filtering “siblings” selector.\n.nextAll()\nGet all following siblings of each element in the set of matched elements, optionally filtered by a selector.\n.nextUntil()\nGet all following siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object passed.\n.not()\nRemove elements from the set of matched elements.\n:not() Selector\nSelects all elements that do not match the given selector.\n:nth-child() Selector\nSelects all elements that are the nth-child of ",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_39",
+        "text": " not match the given selector.\n:nth-child() Selector\nSelects all elements that are the nth-child of their parent.\n:nth-last-child() Selector\nSelects all elements that are the nth-child of their parent, counting from the last element to the first.\n:nth-last-of-type() Selector\nSelects all the elements that are the nth-child of their parent in relation to siblings with the same element name, counting from the last element to the first.\n:nth-of-type() Selector\nSelects all elements that are the nth child of their parent in relation to siblings with the same element name.\n.odd()\nReduce the set of matched elements to the odd ones in the set, numbered from zero.\n:odd Selector\nSelects odd elements, zero-indexed.  See also :even.\n.off()\nRemove an event handler.\n.offset()\nGet the current coordinates ",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_40",
+        "text": "ero-indexed.  See also :even.\n.off()\nRemove an event handler.\n.offset()\nGet the current coordinates of the first element, or set the coordinates of every element, in the set of matched elements, relative to the document.\n.offsetParent()\nGet the closest ancestor element that is positioned.\n.on()\nAttach an event handler function for one or more events to the selected elements.\n.one()\nAttach a handler to an event for the elements. The handler is executed at most once per element per event type.\n:only-child Selector\nSelects all elements that are the only child of their parent.\n:only-of-type Selector\nSelects all elements that have no siblings with the same element name.\n.outerHeight()\nGet the current computed outer height (including padding, border, and optionally margin) for the first element ",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_41",
+        "text": "rent computed outer height (including padding, border, and optionally margin) for the first element in the set of matched elements or set the outer height of every matched element.\n.outerWidth()\nGet the current computed outer width (including padding, border, and optionally margin) for the first element in the set of matched elements or set the outer width of every matched element.\n.parent()\nGet the parent of each element in the current set of matched elements, optionally filtered by a selector.\n:parent Selector\nSelect all elements that have at least one child node (either an element or text).\n.parents()\nGet the ancestors of each element in the current set of matched elements, optionally filtered by a selector.\n.parentsUntil()\nGet the ancestors of each element in the current set of matched",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_42",
+        "text": "tered by a selector.\n.parentsUntil()\nGet the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.\n:password Selector\nSelects all elements of type password.\n.position()\nGet the current coordinates of the first element in the set of matched elements, relative to the offset parent.\n.prepend()\nInsert content, specified by the parameter, to the beginning of each element in the set of matched elements.\n.prependTo()\nInsert every element in the set of matched elements to the beginning of the target.\n.prev()\nGet the immediately preceding sibling of each element in the set of matched elements. If a selector is provided, it retrieves the previous sibling only if it matches that selector.\n.prevAll()\nG",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_43",
+        "text": "lector is provided, it retrieves the previous sibling only if it matches that selector.\n.prevAll()\nGet all preceding siblings of each element in the set of matched elements, optionally filtered by a selector, in the reverse document order.\n.prevUntil()\nGet all preceding siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object.\n.promise()\nReturn a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished.\n.prop()\nGet the value of a property for the first element in the set of matched elements or set one or more properties for every matched element.\n.pushStack()\nAdd a collection of DOM elements onto the jQuery stack.\n.queue()\nShow or manipulate the queue of functions to be execute",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_44",
+        "text": "DOM elements onto the jQuery stack.\n.queue()\nShow or manipulate the queue of functions to be executed on the matched elements.\n:radio Selector\nSelects all  elements of type radio.\n.ready()\nSpecify a function to execute when the DOM is fully loaded.\n.remove()\nRemove the set of matched elements from the DOM.\n.removeAttr()\nRemove an attribute from each element in the set of matched elements.\n.removeClass()\nRemove a single class, multiple classes, or all classes from each element in the set of matched elements.\n.removeData()\nRemove a previously-stored piece of data.\n.removeProp()\nRemove a property for the set of matched elements.\n.replaceAll()\nReplace each target element with the set of matched elements.\n.replaceWith()\nReplace each element in the set of matched elements with the provided new c",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_45",
+        "text": "elements.\n.replaceWith()\nReplace each element in the set of matched elements with the provided new content and return the set of elements that was removed.\n:reset Selector\nSelects all elements of type reset.\nresize event\nBind an event handler to the “resize” event, or trigger that event on an element.\n.resize()\nBind an event handler to the “resize” event, or trigger that event on an element.\n:root Selector\nSelects the element that is the root of the document.\nscroll event\nBind an event handler to the “scroll” event, or trigger that event on an element.\n.scroll()\nBind an event handler to the “scroll” event, or trigger that event on an element.\n.scrollLeft()\nGet the current horizontal position of the scroll bar for the first element in the set of matched elements or set the horizontal positi",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_46",
+        "text": " of the scroll bar for the first element in the set of matched elements or set the horizontal position of the scroll bar for every matched element.\n.scrollTop()\nGet the current vertical position of the scroll bar for the first element in the set of matched elements or set the vertical position of the scroll bar for every matched element.\nselect event\nBind an event handler to the “select” event, or trigger that event on an element.\n.select()\nBind an event handler to the “select” event, or trigger that event on an element.\n:selected Selector\nSelects all elements that are selected.\n.selector\nA selector representing selector passed to jQuery(), if any, when creating the original set.\n.serialize()\nEncode a set of form elements as a string for submission.\n.serializeArray()\nEncode a set of form e",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_47",
+        "text": ")\nEncode a set of form elements as a string for submission.\n.serializeArray()\nEncode a set of form elements as an array of names and values.\n.show()\nDisplay the matched elements.\n.siblings()\nGet the siblings of each element in the set of matched elements, optionally filtered by a selector.\n.size()\nReturn the number of elements in the jQuery object.\n.slice()\nReduce the set of matched elements to a subset specified by a range of indices.\n.slideDown()\nDisplay the matched elements with a sliding motion.\n.slideToggle()\nDisplay or hide the matched elements with a sliding motion.\n.slideUp()\nHide the matched elements with a sliding motion.\n.stop()\nStop the currently-running animation on the matched elements.\nsubmit event\nBind an event handler to the “submit” event, or trigger that event on an elem",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_48",
+        "text": "elements.\nsubmit event\nBind an event handler to the “submit” event, or trigger that event on an element.\n:submit Selector\nSelects all elements of type submit.\n.submit()\nBind an event handler to the “submit” event, or trigger that event on an element.\n:target Selector\nSelects the target element indicated by the fragment identifier of the document’s URI.\n.text()\nGet the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.\n:text Selector\nSelects all input elements of type text.\n.toArray()\nRetrieve all the elements contained in the jQuery set, as an array.\n.toggle()\nDisplay or hide the matched elements.\n.toggle()\nBind two or more handlers to the matched elements, to be executed on alternate clicks.",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_49",
+        "text": "ts.\n.toggle()\nBind two or more handlers to the matched elements, to be executed on alternate clicks.\n.toggleClass()\nAdd or remove one or more classes from each element in the set of matched elements, depending on either the class’s presence or the value of the state argument.\n.trigger()\nExecute all handlers and behaviors attached to the matched elements for the given event type.\n.triggerHandler()\nExecute all handlers attached to an element for an event.\n.unbind()\nRemove a previously-attached event handler from the elements.\n.undelegate()\nRemove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.\n.uniqueSort()\nSorts a jQuery object of DOM elements, in place, with the duplicates removed. Note that this only works on jQuery o",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_50",
+        "text": "object of DOM elements, in place, with the duplicates removed. Note that this only works on jQuery objects consisting of DOM elements, not strings or numbers.\nunload event\nBind an event handler to the “unload” event, or trigger that event on an element.\n.unload()\nBind an event handler to the “unload” event, or trigger that event on an element.\n.unwrap()\nRemove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.\n.val()\nGet the current value of the first element in the set of matched elements or set the value of every matched element.\n:visible Selector\nSelects all elements that are visible.\n.width()\nGet the current computed width for the first element in the set of matched elements or set the width of every matched element.\n.wrap()\nWrap an HT",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_51",
+        "text": "element in the set of matched elements or set the width of every matched element.\n.wrap()\nWrap an HTML structure around each element in the set of matched elements.\n.wrapAll()\nWrap an HTML structure around all elements in the set of matched elements.\n.wrapInner()\nWrap an HTML structure around the content of each element in the set of matched elements.\nBooks\nCopyright 2025 OpenJS Foundation and jQuery contributors. All rights reserved. See jQuery License for more information. The OpenJS Foundation has registered trademarks and uses trademarks. For a list of trademarks of the OpenJS Foundation , please see our Trademark Policy and Trademark List . Trademarks and logos not indicated on the list of OpenJS Foundation trademarks are trademarks™ or registered® trademarks of their respective holde",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    },
+    {
+        "id": "1_52",
+        "text": " of OpenJS Foundation trademarks are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them. OpenJS Foundation Terms of Use , Privacy , and Cookie Policies also apply.\nWeb hosting by Digital Ocean | CDN by Fastly | Powered by WordPress",
+        "source": "https://api.jquery.com/",
+        "title": "jQuery API Documentation"
+    }
+]
