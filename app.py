@@ -1,67 +1,60 @@
 import streamlit as st
-import json
-import os
+from rag_pipeline import answer_question
+from scraper import scrape_url, parse_content, save_to_json
 
-# -----------------------------
-# Page Config
-# -----------------------------
+# ---------- PAGE CONFIG ----------
 st.set_page_config(
     page_title="API Guardian 🛡️",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
-
 st.title("API Guardian 🛡️")
-st.markdown("Browse and explore scraped API documentation content effortlessly.")
+st.markdown("Ask questions about any API documentation you have scraped.")
 
-# -----------------------------
-# Load Data
-# -----------------------------
-DATA_FILE = "output/docs.json"
+# ---------- SESSION STATE ----------
+if 'chat_history' not in st.session_state:
+    st.session_state['chat_history'] = []
 
-if not os.path.exists(DATA_FILE):
-    st.error(f"No data found. Please run the scraper first to generate {DATA_FILE}.")
-    st.stop()
+if 'temp' not in st.session_state:
+    st.session_state['temp'] = 0.2
+if 'max_tokens' not in st.session_state:
+    st.session_state['max_tokens'] = 512
 
-with open(DATA_FILE, "r", encoding="utf-8") as f:
-    data = json.load(f)["docs"]
+# ---------- SIDEBAR ----------
+with st.sidebar:
+    st.header("Settings")
+    st.session_state['temp'] = st.slider("Temperature", 0.0, 1.0, st.session_state['temp'])
+    st.session_state['max_tokens'] = st.number_input("Max Tokens", value=st.session_state['max_tokens'], step=50)
 
-# -----------------------------
-# Sidebar Filters
-# -----------------------------
-st.sidebar.header("Filter Options")
-titles = [doc["title"] for doc in data]
-selected_title = st.sidebar.selectbox("Select a Document Title:", ["All"] + titles)
-
-search_text = st.sidebar.text_input("Search in content:")
-
-# -----------------------------
-# Display Content
-# -----------------------------
-def display_doc(doc):
-    st.subheader(doc["title"])
-    st.markdown(f"**URL:** {doc['url']}")
-    st.markdown(f"**Scraped on:** {doc['scraped_at']}")
     st.markdown("---")
-    st.write(doc["content"][:5000])  # limit for large content
+    st.header("Scrape New Docs")
+    new_url = st.text_input("Enter API Doc URL")
+    if st.button("Scrape & Save"):
+        if new_url:
+            try:
+                html = scrape_url(new_url)
+                doc_data = parse_content(html, new_url)  # Returns single document
+                save_to_json([doc_data])  # Wrap in list before saving
+                st.success("New API documentation scraped and saved!")
+            except Exception as e:
+                st.error(f"Error scraping documentation: {str(e)}")
 
-    if doc["code_examples"]:
-        st.markdown("**Code Examples:**")
-        for i, code in enumerate(doc["code_examples"], 1):
-            st.code(code, language="python")
-    st.markdown("===")
+# ---------- CHAT INTERFACE ----------
+query = st.chat_input("Ask a question about the API...")
 
-# Filter docs
-filtered_docs = []
-for doc in data:
-    if selected_title != "All" and doc["title"] != selected_title:
-        continue
-    if search_text and search_text.lower() not in doc["content"].lower():
-        continue
-    filtered_docs.append(doc)
+if query:
+    # Call RAG pipeline
+    result = answer_question(query, top_k=5)
+    # Save to chat history
+    st.session_state['chat_history'].append((query, result))
 
-if filtered_docs:
-    for doc in filtered_docs:
-        display_doc(doc)
-else:
-    st.info("No documents found with the selected filters.")
+ # ---------- DISPLAY CHAT ----------
+    st.markdown("### 💬 Chat History")
+    for q, res in st.session_state['chat_history']:
+        st.chat_message("user").write(q)
+        with st.chat_message("assistant"):
+            st.write(res['answer'])
+            st.markdown(f"**Confidence:** {res['confidence']:.2f}")
+            if res['sources']:
+                with st.expander("📚 Sources"):
+                    for src in res['sources']:
+                        st.markdown(f"- [Link]({src})")
