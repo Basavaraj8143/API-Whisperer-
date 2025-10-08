@@ -1,46 +1,22 @@
 import json
-import time
 from datetime import datetime
 from bs4 import BeautifulSoup
-from tqdm import tqdm
 import requests
-
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
+from tqdm import tqdm
+import os
 
 # -----------------------------
-# Fetch Functions
+# Fetch Function (static only)
 # -----------------------------
 def fetch_static(url):
-    """Try simple GET first (fast for static pages)."""
+    """Fetch page content using simple GET (no Selenium)."""
     try:
         r = requests.get(url, timeout=10)
         r.raise_for_status()
-        if len(r.text) < 5000:
-            return None  # might be JS rendered
         return r.text
-    except Exception:
-        return None
-
-
-def fetch_dynamic(url):
-    """Use headless Chrome for JS rendered content."""
-    try:
-        opts = Options()
-        opts.add_argument("--headless")
-        opts.add_argument("--no-sandbox")
-        opts.add_argument("--disable-dev-shm-usage")
-        driver = webdriver.Chrome(ChromeDriverManager().install(), options=opts)
-        driver.get(url)
-        time.sleep(2)
-        html = driver.page_source
-        driver.quit()
-        return html
     except Exception as e:
-        print(f"Selenium fetch failed for {url}: {e}")
+        print(f"Failed to fetch {url}: {e}")
         return None
-
 
 # -----------------------------
 # Parsing Function
@@ -64,7 +40,6 @@ def parse_content(html, url):
         "scraped_at": datetime.today().strftime("%Y-%m-%d"),
     }
 
-
 # -----------------------------
 # Pagination / Link Extraction
 # -----------------------------
@@ -81,7 +56,6 @@ def extract_links(base_url, html, limit=5):
                 links.append(href)
     return links
 
-
 # -----------------------------
 # Master Scraper
 # -----------------------------
@@ -95,7 +69,7 @@ def scrape_url(start_url, max_pages=3):
             continue
         visited.add(url)
 
-        html = fetch_static(url) or fetch_dynamic(url)
+        html = fetch_static(url)
         if not html:
             print(f"❌ Could not scrape {url}")
             continue
@@ -112,12 +86,12 @@ def scrape_url(start_url, max_pages=3):
 
     return docs
 
-
 # -----------------------------
 # Save Functions
 # -----------------------------
 def save_to_json(data, filename="output/docs.json"):
     """Save scraped docs to JSON."""
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
     output = {"docs": []}
     for i, d in enumerate(data, 1):
         d["id"] = str(i)
@@ -126,7 +100,6 @@ def save_to_json(data, filename="output/docs.json"):
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=4)
     print(f"\n✅ Saved {len(data)} docs → {filename}")
-
 
 # -----------------------------
 # Chunk Creation
@@ -146,13 +119,12 @@ def create_chunks(docs, chunk_size=800, overlap=100):
             })
     return chunks
 
-
 def save_chunks(chunks, filename="output/chunks.json"):
     """Save text chunks for embeddings."""
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(chunks, f, ensure_ascii=False, indent=4)
     print(f"✅ Saved {len(chunks)} chunks → {filename}")
-
 
 # -----------------------------
 # Main Runner
