@@ -31,7 +31,7 @@ API Guardian handles both static and dynamic pages through a dual-scraping appro
 
 | Layer | Technology |
 |-------|------------|
-| Frontend | Streamlit / Gradio |
+| Frontend | Streamlit  |
 | Backend | Python, Flask (optional) |
 | AI/NLP | Hugging Face Transformers, SentencePiece |
 | Scraping | BeautifulSoup, Selenium |
@@ -121,6 +121,7 @@ MIT License - See [LICENSE](LICENSE) file
 **Basavaraj M N**  
 KLE Institute of Technology, Hubli  
 Student & Developer
+
 
 
 
