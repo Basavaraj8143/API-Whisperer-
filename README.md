@@ -107,11 +107,10 @@ scrape_and_save(
 5. Open pull request
 
 ## Snapshots 
-<img width="600" height="450" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_ (2)" src="https://github.com/user-attachments/assets/c4d6e80b-53b8-49ba-b645-4ca88abefb21" />
-<img width="600" height="450" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_ (3)" src="https://github.com/user-attachments/assets/14f27e90-1f04-47ca-b5e8-fe0a6c4c82a1" />
+<img width="400" height="250" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_ (2)" src="https://github.com/user-attachments/assets/c4d6e80b-53b8-49ba-b645-4ca88abefb21" />
+<img width="400" height="250" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_ (3)" src="https://github.com/user-attachments/assets/14f27e90-1f04-47ca-b5e8-fe0a6c4c82a1" />
 Responsive mobile view :
-<img width="700" height="1500" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_(Samsung Galaxy S20 Ultra)" src="https://github.com/user-attachments/assets/942e70b2-9047-4263-be19-d8ca9616b0dd" />
-<img width="700" height="1500" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_(Samsung Galaxy S20 Ultra) (2)" src="https://github.com/user-attachments/assets/c01701e2-0bb0-410f-b535-3393abc57463" />
+<img width="300" height="500" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_(Samsung Galaxy S20 Ultra)" src="https://github.com/user-attachments/assets/942e70b2-9047-4263-be19-d8ca9616b0dd" /><img width="300" height="500" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_(Samsung Galaxy S20 Ultra) (2)" src="https://github.com/user-attachments/assets/c01701e2-0bb0-410f-b535-3393abc57463" />
 
 ## License 📄
 
@@ -122,5 +121,6 @@ MIT License - See [LICENSE](LICENSE) file
 **Basavaraj M N**  
 KLE Institute of Technology, Hubli  
 Student & Developer
+
 
 
