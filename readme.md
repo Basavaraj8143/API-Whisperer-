@@ -59,7 +59,11 @@ Add your HF_TOKEN as a repository secret under Settings → Repository Secrets �
 The token will be automatically loaded from environment variables
 
 📸 Snapshots
-
+Show Image
+Show Image
+Show Image
+Show Image
+Show Image
 🧠 Example Use
 Input:
 "Scrape the website https://example.com and summarize key topics."
