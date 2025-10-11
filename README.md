@@ -58,13 +58,12 @@ If deployed on Hugging Face Spaces:
 Add your HF_TOKEN as a repository secret under Settings → Repository Secrets → New secret
 The token will be automatically loaded from environment variables
 
-Snapshots : 
+📸 Snapshots
 <img width="1226" height="911" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_ (2)" src="https://github.com/user-attachments/assets/8d9b3664-fe8d-4cd2-889b-3510427ee63b" />
 <img width="1226" height="911" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_ (3)" src="https://github.com/user-attachments/assets/16f777ed-9a7c-4ad1-8d6a-9aa69de3024b" />
 <img width="1442" height="3203" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_(Samsung Galaxy S20 Ultra)" src="https://github.com/user-attachments/assets/1987a1fd-4536-4520-9559-1f77b4e38fe9" />
 <img width="1442" height="3202" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_(Samsung Galaxy S20 Ultra) (1)" src="https://github.com/user-attachments/assets/126a3c3a-ffcc-4976-8bd7-6709637b39a5" />
 <img width="1226" height="911" alt="api-guardian-lf5xtrqzwq2ikptmcc8bxi streamlit app_" src="https://github.com/user-attachments/assets/9602c8a0-ac62-4df9-b95b-4b4ba3a2cefb" />
-
 🧠 Example Use
 Input:
 "Scrape the website https://example.com and summarize key topics."
@@ -72,14 +71,14 @@ Output:
 "The website discusses machine learning frameworks, datasets, and AI benchmarks, focusing on model training efficiency."
 🧩 Future Improvements
 
-Add offline mode using Ollama An for local AI inference.
+Add offline mode using Ollama for local AI inference.
 Integrate vector database (FAISS / ChromaDB) for advanced retrieval.
 Improve chunk storage efficiency and indexing.
 Add multi-language support and voice interface.
 Enhance RAG pipeline with better context retrieval.
 
 👨‍💻 Authors
-Developed by: Basavaraj m n
+Developed by: Basavaraj M N
 Institution: KLE Institute of Technology, Hubli
 Role: Student & Developer
 🪪 License
@@ -90,5 +89,4 @@ This project is licensed under the MIT License — feel free to use, modify, and
 The embeddings/ directory stores vector representations for efficient similarity search.
 The output/ directory contains generated files and logs.
 config.py centralizes all configuration settings for easy management.
-rag_pipeline.py implements the Retrieval-Augmented Generation system for enhanced AI responses.
-
+rag_pipeline.py implements the Retrieval-Augmented Generation system for enhanced AI responses
